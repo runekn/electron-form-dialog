@@ -23,13 +23,15 @@ body {
     max-height: 100%;
     margin-bottom: .8em;
     padding: 0 .5em;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 #data-container {
-    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5em;
+    margin-bottom: 1em;
 }
 
 #buttons {
