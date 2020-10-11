@@ -11,6 +11,10 @@ npm install electron-form-dialog --save
 ```js
 dialog([options, parentBrowserWindow]).then(...).catch(...)
 ```
+The result object given to the `then` function is a JSON object that maps `name` to 
+1. `value` of checked radio button incase of radio input, or null if none is selected
+2. `true` if checked for checkboxes
+3. `value` for any other input and select
 
 ## Example
 
@@ -47,7 +51,7 @@ dialog([options, parentBrowserWindow]).then(...).catch(...)
 
 | Key  | Explanation |
 | ------------- | ------------- |
-| title  | (optional, string) The title of the prompt window. Defaults to 'Prompt'. |
+| title  | (optional, string) The title of the prompt window. Defaults to 'Dialog'. |
 | description  | (optional, string) The label which appears on the prompt for the input field. Defaults to 'Please input a value:'. |
 | form | (required, string) Custom HTML to add to the form container. Upon submitting all input tags in this container will converted to JSON object that maps name attribues to values. |
 | buttonLabels | (optional, object) The text for the OK/cancel buttons. Properties are 'ok' and 'cancel'. Defaults to null. |
