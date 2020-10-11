@@ -1,0 +1,38 @@
+{
+  "name": "electron-form-dialog",
+  "version": "0.0.0-dev",
+  "description": "Electron helper to prompt for input given any form inputs.",
+  "keywords": [
+    "electron",
+    "dialog"
+  ],
+  "author": {
+    "name": "runekn",
+    "email": "runekn@users.noreply.github.com",
+    "url": "https://github.com/runekn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runekn/electron-form-dialog.git"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "test": "npm run lint"
+  },
+  "xo": {
+    "esnext": true,
+    "env": [
+      "node",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "doc-ready": "^1.0.4"
+  },
+  "devDependencies": {
+    "xo": "^0.32.1"
+  }
+}
