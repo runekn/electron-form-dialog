@@ -9,8 +9,12 @@ npm install electron-form-dialog --save
 ```
 
 ```js
-dialog([options, parentBrowserWindow]).then(...).catch(...)
+dialog([contentOptions, windowOptions]).then(...).catch(...)
 ```
+The result object given to the `then` function is a JSON object that maps `name` to 
+1. `value` of checked radio button incase of radio input, or null if none is selected
+2. `true` if checked for checkboxes
+3. `value` for any other input and select
 
 ## Example
 
@@ -34,18 +38,6 @@ dialog({
 	}
 }).catch(console.error);
 ```
-
-## Documentation
-
-Primary method:
-
-```js
-dialog([contentOptions, windowOptions]).then(...).catch(...)
-```
-The result object given to the `then` function is a JSON object that maps `name` to 
-1. `value` of checked radio button incase of radio input, or null if none is selected
-2. `true` if checked for checkboxes
-3. `value` for any other input and select
 
 ### ContentOptions object (required)
 
