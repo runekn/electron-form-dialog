@@ -26,16 +26,18 @@ dialog({
 	label: 'Please select a server',
 	form: `
 		<input type="radio" name="server" value="default" checked>
-		<label for="">Standard server</label>
+		<label for="default">Standard server</label>
 		<br>
 		<input type="radio" name="server" value="custom">
 		<input type="url" name="custominput" for="custom" placeholder="http://test.com">`
 }).then((r) => {
-	if(r.server === "custom") {
-        	setServer(r.custominput);
-	} else {
-		setServer(null);
-	}
+    if(r != null) {
+        if(r.server === "custom") {
+                setServer(r.custominput);
+        } else {
+            setServer(null);
+        }
+    }
 }).catch(console.error);
 ```
 

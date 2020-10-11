@@ -28,20 +28,6 @@ body {
     text-overflow: ellipsis;
 }
 
-#data {
-    border-radius: 2px;
-    background: #fff;
-    width: 90%;
-    padding: .4em .5em;
-    border: 1px solid black;
-    min-height: 2em;
-    margin: 0 0 1.2em;
-}
-
-select#data {
-    height: 2em;
-}
-
 #data-container {
     text-align: center;
 }
