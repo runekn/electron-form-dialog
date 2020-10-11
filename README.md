@@ -32,7 +32,7 @@ dialog({
 	} else {
 		setServer(null);
 	}
-}).catch(settings.logger.log);
+}).catch(console.error);
 ```
 
 ## Documentation
@@ -51,13 +51,13 @@ The result object given to the `then` function is a JSON object that maps `name`
 
 | Key  | Explanation |
 | ------------- | ------------- |
-| description  | (optional, string) The label which appears on the prompt for the input field. Defaults to 'Please input a value:'. |
 | form | (required, string) Custom HTML to add to the form container. Upon submitting all input tags in this container will converted to JSON object that maps name attribues to values. |
+| description  | (optional, string) The label which appears above the form. Defaults to 'Please fill this form'. |
 | buttonLabels | (optional, object) The text for the OK/cancel buttons. Properties are 'ok' and 'cancel'. Defaults to null. |
 | labelIsHtml | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
 | customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window. Defaults to null. |
 
-### WindowOptions object (required)
+### WindowOptions object (optional)
 
 | Key  | Explanation |
 | ------------- | ------------- |

@@ -4,6 +4,7 @@
   "description": "Electron helper to prompt for input given any form inputs.",
   "keywords": [
     "electron",
+    "form",
     "dialog"
   ],
   "author": {
