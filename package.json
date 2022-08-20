@@ -1,6 +1,6 @@
 {
   "name": "electron-form-dialog",
-  "version": "0.0.1-dev",
+  "version": "0.0.2-dev",
   "description": "Electron helper to prompt for input given any form inputs.",
   "keywords": [
     "electron",
